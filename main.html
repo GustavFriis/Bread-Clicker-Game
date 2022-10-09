@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bread</title>
+    <link href="source.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>The Bakery</h1>
+<h2>You've been tasked to bake bread. A lot of bread</h2>
+
+<div class="breadStyle">
+    <img id="breadIMG" src = "https://pngimg.com/uploads/bread/bread_PNG2267.png" style = "width: 150px" onclick="breadClick()"  alt="bread button"/>
+
+    <p><span id = "counter">0</span> loafs of bread</p>
+</div>
+
+<div class="upgradesStyle">
+    <button id="upgradeButton1" onclick="buyChildWorker()"> buy child worker for <span id = "childWorkerAmountText">20</span> loafs</button>
+    <p>Child workers makes 1 loaf of bread every second</p>
+    <button id="upgradeButton2" onclick="buyGrandma()"> buy grandma for <span id = "grandmaAmountText">100</span> loafs</button>
+    <p>Grandmas makes 10 loafs of bread every second</p>
+    <button id="upgradeButton3" onclick="buyBakery()"> buy a bakery for <span id = "bakeryCostText">1000</span> loafs</button>
+    <p>The bakery produces 50 loafs of bread every second </p>
+</div>
+<div class="winCondition">
+    <p>Once you've baked 100000 loafs of breads you can leave and feed the people</p>
+
+    <button onclick="feedThePeople()">feed the people</button>
+
+    <p><span id = "timerText"></span> seconds played</p>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

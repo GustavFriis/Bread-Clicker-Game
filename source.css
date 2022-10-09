@@ -1,0 +1,56 @@
+body {background-color: rgb(243,243,243)}
+
+h1{
+    font-family: monospace;
+}
+h2{
+    font-family: monospace;
+}
+
+#breadIMG{
+    cursor: pointer;
+    transition: ease-in-out 50ms;
+}
+#breadIMG:hover{
+    transform:scale(110%);
+}
+#breadIMG:active{
+    transform: scale(100%);
+}
+.breadStyle{
+    float: left;
+    width: 70%;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.winCondition{
+    font-family: monospace;
+    font-size: 15px;
+    position: fixed;
+    left: 15%;
+    right: auto;
+    bottom: 10px;
+    text-align: center;
+    background-color: gainsboro;
+
+}
+
+.upgradesStyle{
+    float: right;
+    width: auto;
+    font-family: monospace;
+    font-size: 15px;
+    background-color: gainsboro;
+}
+
+#upgradeButton1{
+    font-family: monospace;
+}
+#upgradeButton2{
+    font-family: monospace;
+}
+#upgradeButton3{
+    font-family: monospace;
+}
